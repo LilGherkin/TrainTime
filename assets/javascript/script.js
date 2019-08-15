@@ -19,7 +19,7 @@ var firebaseConfig = {
     // Grabs user input
     var TrainName = $("#TrainNameInput").val().trim();
     var TrainDestination = $("#TrainDestinationInput").val().trim();
-    var FirstTrainTime = moment($("#FirstTrainTimeInput").val().trim(), "MM/DD/YYYY").format("X");
+    var FirstTrainTime = moment($("#FirstTrainTimeInput").val().trim(), "HH:mm").format("X");
     var Frequency = $("#FrequencyInput").val().trim();
   
     // Creates local "temporary" object for holding new train data
@@ -37,7 +37,7 @@ var firebaseConfig = {
     console.log(NewTrain.Name);
     console.log(NewTrain.Destination);
     console.log(NewTrain.FirstTime);
-    console.log(NewTraain.FrequencyMM);
+    console.log(NewTrain.FrequencyMM);
   
     alert("Train Added");
   
