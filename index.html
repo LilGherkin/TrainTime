@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="container jumbotron">
+  <h1 class="text-center">Train Time Choo Choo</h1>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-med">
+      <table>
+        <title>Current Train Schedule</title>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency (Min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </table>
+    </div>
+</div>
+</div>
+<div class="row">
+  <div class="container col-med-span-6 offset-3">
+    <form>
+      <div class="form-group">
+        <label for="TrainInformation">Train Name</label>
+          <input type="text" class="form-control" id="TrainNameInput" aria-describedby="Name" placeholder="Trainy McTrainFace">
+          <small id="TrainHelp" class="form-text text-muted">Enter the name of the train you want to add to the schedule.</small>
+        </div>
+        <div class="form-group">
+          <label for="DestinationInformation">Destination</label>
+          <input type="text" class="form-control" id="DestinationInput" placeholder="Chicago">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="FirstTime">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+      <button type="submit" class="btn btn-primary">Submit</button> 
+    </form>
+  </div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD0mL-g0VdTOQHpUm3FEg0pb7lDQSJn6z8",
+    authDomain: "traintime-aa520.firebaseapp.com",
+    databaseURL: "https://traintime-aa520.firebaseio.com",
+    projectId: "traintime-aa520",
+    storageBucket: "",
+    messagingSenderId: "975185818965",
+    appId: "1:975185818965:web:fbe652e88e30aee9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+
+</html>
